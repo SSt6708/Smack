@@ -358,6 +358,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="X28-q8-woV" eventType="touchUpInside" id="ALX-Zb-OgL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFT-vW-VXa">
                                 <rect key="frame" x="137.5" y="295" width="100" height="130"/>
@@ -370,6 +373,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createPressed:" destination="icg-gp-VbV" eventType="touchUpInside" id="rgO-hG-Pwj"/>
+                                    <action selector="pickAvatarPressed:" destination="X28-q8-woV" eventType="touchUpInside" id="mzA-uO-vuk"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-DW-bHI">
@@ -397,7 +401,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="vmJ-yd-zYX"/>
                                         </constraints>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -416,7 +420,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzv-fK-Bbe">
                                         <rect key="frame" x="0.0" y="130" width="250" height="2"/>
@@ -446,6 +450,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createPressed:" destination="icg-gp-VbV" eventType="touchUpInside" id="1yd-QF-5cm"/>
+                                    <action selector="pickBGColorPressed:" destination="X28-q8-woV" eventType="touchUpInside" id="MLO-by-141"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -469,6 +474,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="51o-AU-uWN" id="Txb-1X-Fdh"/>
+                        <outlet property="passTxt" destination="dub-pA-Az7" id="yeF-91-cAW"/>
+                        <outlet property="userImg" destination="hEh-7q-xlc" id="ndG-HR-Wim"/>
+                        <outlet property="usernameTxt" destination="gFE-af-F1X" id="MeU-5z-gzW"/>
                         <segue destination="aG8-dU-QEw" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="hdI-tj-dau"/>
                     </connections>
                 </viewController>
