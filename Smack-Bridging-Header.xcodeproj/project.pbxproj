@@ -22,6 +22,7 @@
 		268199AC2297277C00F1668A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268199AB2297277C00F1668A /* LoginVC.swift */; };
 		268199AE22972F6000F1668A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268199AD22972F6000F1668A /* CreateAccountVC.swift */; };
 		268199B12297590200F1668A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268199B02297590200F1668A /* AuthService.swift */; };
+		268199B3229A622400F1668A /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268199B2229A622400F1668A /* UserDataService.swift */; };
 		AEAC5192C2A122A9FBC2717B /* Pods_SmackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34861CB6B08DD5DE48087AB3 /* Pods_SmackTests.framework */; };
 		C5541D187D0F213623875A40 /* Pods_SmackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C918B2E4A84F1C50C965A089 /* Pods_SmackUITests.framework */; };
 		D28B46A9408749641DC0A530 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F649FB42C34193D28A7E7A2 /* Pods_Smack.framework */; };
@@ -68,6 +69,7 @@
 		268199AB2297277C00F1668A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		268199AD22972F6000F1668A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		268199B02297590200F1668A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		268199B2229A622400F1668A /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		34861CB6B08DD5DE48087AB3 /* Pods_SmackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		587A65EDBD5E4AEDC1CF6017 /* Pods-SmackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackUITests/Pods-SmackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B08029589F45E4C1F8EA335 /* Pods-SmackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackTests/Pods-SmackTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				268199B02297590200F1668A /* AuthService.swift */,
+				268199B2229A622400F1668A /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				2681999C2296105D00F1668A /* ChannelVC.swift in Sources */,
 				2681999A2296103D00F1668A /* ChatVC.swift in Sources */,
 				268199AC2297277C00F1668A /* LoginVC.swift in Sources */,
+				268199B3229A622400F1668A /* UserDataService.swift in Sources */,
 				268199A72297175900F1668A /* GradientView.swift in Sources */,
 				26819964229601DC00F1668A /* AppDelegate.swift in Sources */,
 				268199AE22972F6000F1668A /* CreateAccountVC.swift in Sources */,
