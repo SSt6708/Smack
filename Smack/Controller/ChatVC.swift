@@ -46,8 +46,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNELS_SELECTED, object: nil)
         //NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.updateChat(_:)), name: NOTIF_MESSAGE_UPDATE, object: nil)
         
-        SocketService.instance.getChatMessage { (success) in
-            if success {
+        SocketService.instance.getChatMessage { (newMessage) in
+            if newMessage.channelId == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn{
+                MessageService.instance.messages.append(newMessage)
                 self.tableView.reloadData()
                 
                 if MessageService.instance.messages.count > 0 {
@@ -56,6 +57,17 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 }
             }
         }
+        
+        /*SocketService.instance.getChatMessage { (success) in
+            if success {
+                self.tableView.reloadData()
+                
+                if MessageService.instance.messages.count > 0 {
+                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: true)
+                }
+            }
+        }*/
         
         SocketService.instance.getTypingUsers { (typingUsers) in
             
